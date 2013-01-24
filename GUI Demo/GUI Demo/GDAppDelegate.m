@@ -24,5 +24,9 @@
 }
 
 - (IBAction)doGoodbye:(id)sender {
+    NSString* currentText = nil;
+    currentText = [[self theTextField] stringValue];
+    currentText = [NSString stringWithFormat: @"Goodbye, %@",    currentText ];
+    [[self theTextField] setStringValue: currentText];
 }
 @end
